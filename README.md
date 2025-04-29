@@ -1,5 +1,7 @@
-📋 Visão Geral
+📋 Visão Geral\
+
 O WebScrape AI Content Generator é uma ferramenta poderosa que utiliza web scraping e inteligência artificial para extrair, processar e gerar conteúdo personalizado automaticamente. O sistema analisa páginas web, identifica os links mais relevantes, extrai informações valiosas e cria folhetos informativos detalhados sobre empresas ou pessoas.
+
 ✨ Principais Funcionalidades
 
 Web Scraping Inteligente: Extrai dados estruturados de qualquer site de forma eficiente
@@ -25,6 +27,7 @@ Geração de Folheto: Processa todos os dados coletados e gera um folheto inform
 Exportação: Disponibiliza o conteúdo em formatos como Markdown, PDF ou HTML
 
 📊 Exemplos de Uso
+
 Para Empresas
 
 Geração de perfis corporativos detalhados
