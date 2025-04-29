@@ -1,43 +1,78 @@
-📋 Visão Geral\
+# Brochure Generator
 
-O WebScrape AI Content Generator é uma ferramenta poderosa que utiliza web scraping e inteligência artificial para extrair, processar e gerar conteúdo personalizado automaticamente. O sistema analisa páginas web, identifica os links mais relevantes, extrai informações valiosas e cria folhetos informativos detalhados sobre empresas ou pessoas.
+O **Brochure Generator** é uma aplicação Python que utiliza a API da OpenAI para gerar brochuras personalizadas para empresas com base no conteúdo de seus sites. Ele analisa a página inicial e links relevantes, como "Sobre", "Carreiras" e outros, para criar um documento em Markdown que pode ser usado para atrair clientes, investidores e novos talentos.
 
-✨ Principais Funcionalidades
+## Funcionalidades
 
-Web Scraping Inteligente: Extrai dados estruturados de qualquer site de forma eficiente
-Análise de Relevância: Utiliza a API da OpenAI para identificar os links mais importantes
-Verificação de Conteúdo: Analisa automaticamente o conteúdo dos links selecionados
-Geração de Conteúdo: Cria folhetos informativos completos e detalhados
-Customização: Adapta-se a diferentes tipos de entidades (empresas ou pessoas)
+- **Análise de Sites**: Extrai o título, conteúdo textual e links de uma página da web.
+- **Filtragem de Links Relevantes**: Identifica links importantes para a criação de brochuras, como páginas de "Sobre" e "Carreiras".
+- **Geração de Brochuras**: Cria um arquivo `brochure.md` com informações detalhadas sobre a empresa.
+- **Exibição no Terminal**: Mostra a brochura gerada no terminal com formatação Markdown.
 
-🛠️ Tecnologias Utilizadas
+## Pré-requisitos
 
-Python: Linguagem base do projeto
-BeautifulSoup/Selenium: Para extração de dados da web
-OpenAI API: Para análise de relevância e geração de conteúdo
-Pandas: Processamento e manipulação de dados
-Flask/FastAPI: API para integração com outros sistemas (opcional)
+- Python 3.8 ou superior
+- Uma chave de API da OpenAI configurada no arquivo `.env`
 
-🚀 Como Funciona
+## Instalação
 
-Extração de Dados: O sistema acessa uma URL fornecida e extrai todos os dados relevantes
-Identificação de Links: Utilizando algoritmos de processamento de texto e a API da OpenAI, identifica os links mais importantes
-Análise de Conteúdo: Navega pelos links selecionados e extrai informações valiosas
-Geração de Folheto: Processa todos os dados coletados e gera um folheto informativo completo
-Exportação: Disponibiliza o conteúdo em formatos como Markdown, PDF ou HTML
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/brochure-generator.git
+   cd brochure-generator
+   ```
 
-📊 Exemplos de Uso
+2. Crie um ambiente virtual e ative-o:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # No Windows: venv\Scripts\activate
+   ```
 
-Para Empresas
+3. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Geração de perfis corporativos detalhados
-Análise de produtos e serviços
-Mapeamento de presença online
-Identificação de diferenciais competitivos
+4. Configure a chave da API da OpenAI:
+   - Crie um arquivo `.env` na raiz do projeto.
+   - Adicione a seguinte linha:
+     ```
+     OPENAI_API_KEY=your_openai_api_key
+     ```
 
-Para Pessoas
+## Uso
 
-Criação de biografias profissionais
-Compilação de realizações e contribuições
-Análise de presença digital
-Resumo de publicações e trabalhos
+1. Execute o script principal:
+   ```bash
+   python main.py
+   ```
+
+2. Insira a URL da página inicial da empresa e o nome da empresa quando solicitado.
+
+3. O arquivo `brochure.md` será gerado com a brochura da empresa.
+
+4. A brochura também será exibida no terminal com formatação Markdown.
+
+## Exemplo de Saída
+
+Um exemplo de brochura gerada pode ser encontrado no arquivo `brochure.md`. Aqui está um trecho:
+
+```markdown
+# Nome da Empresa
+
+## Sobre Nós
+Texto extraído da página "Sobre".
+
+## Carreiras
+Texto extraído da página "Carreiras".
+
+## Clientes
+Texto extraído da página inicial.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License.
+
+## Contato
+
+Para dúvidas ou sugestões, entre em contato pelo e-mail: `seu-email@exemplo.com`.
