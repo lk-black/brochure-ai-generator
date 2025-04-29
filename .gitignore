@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/python,ubuntu,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,ubuntu,node
 
@@ -142,6 +143,8 @@ dist
 .svelte-kit
 
 ### Python ###
+=======
+>>>>>>> 84039824d403d826b0bba15c6ba9e69c1eb8bada
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -186,6 +189,10 @@ htmlcov/
 .nox/
 .coverage
 .coverage.*
+<<<<<<< HEAD
+=======
+.cache
+>>>>>>> 84039824d403d826b0bba15c6ba9e69c1eb8bada
 nosetests.xml
 coverage.xml
 *.cover
@@ -199,6 +206,10 @@ cover/
 *.pot
 
 # Django stuff:
+<<<<<<< HEAD
+=======
+*.log
+>>>>>>> 84039824d403d826b0bba15c6ba9e69c1eb8bada
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -236,6 +247,15 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+<<<<<<< HEAD
+=======
+# UV
+#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#uv.lock
+
+>>>>>>> 84039824d403d826b0bba15c6ba9e69c1eb8bada
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
@@ -248,8 +268,15 @@ ipython_config.py
 #pdm.lock
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
+<<<<<<< HEAD
 #   https://pdm.fming.dev/#use-with-ide
 .pdm.toml
+=======
+#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
+.pdm.toml
+.pdm-python
+.pdm-build/
+>>>>>>> 84039824d403d826b0bba15c6ba9e69c1eb8bada
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
@@ -262,6 +289,10 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> 84039824d403d826b0bba15c6ba9e69c1eb8bada
 .venv
 env/
 venv/
@@ -300,6 +331,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+<<<<<<< HEAD
 ### Python Patch ###
 # Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
 poetry.toml
@@ -313,3 +345,10 @@ pyrightconfig.json
 #!! ERROR: ubuntu is undefined. Use list command to see defined gitignore types !!#
 
 # End of https://www.toptal.com/developers/gitignore/api/python,ubuntu,node
+=======
+# Ruff stuff:
+.ruff_cache/
+
+# PyPI configuration file
+.pypirc
+>>>>>>> 84039824d403d826b0bba15c6ba9e69c1eb8bada
